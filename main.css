@@ -225,7 +225,11 @@ html {
   }
 
   .pokedex-card {
-    flex-basis: calc(50% - 8px);
+    flex-basis: calc(50% - 16px);
+  }
+
+  .pokemon-name {
+    font-size: 32px;
   }
 }
 
