@@ -1,0 +1,284 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: teko;
+}
+
+.hero-title {
+  display: inline-block;
+  border: black solid 3px;
+  margin: 10px;
+  padding: 30px;
+  font-family: teko;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.hero-banner {
+  background-color: coral;
+  text-align: center;
+}
+
+.hero-content {
+  padding: 20px;
+}
+
+.hero-subheading {
+  font-size: 24px;
+}
+
+.responsive-image {
+  width: 100%;
+}
+
+.image-wrapper {
+  background-color: rgb(217, 229, 240);
+}
+
+.pokedex-card {
+  margin: ;
+}
+
+.pokemon-number {
+  padding-top: 6px;
+  color: rgb(229, 202, 177);
+  font-family: teko;
+  margin-bottom: 30px;
+}
+
+.pokemon-info {
+  margin-bottom: 24px;
+}
+
+.pokemon-name {
+  font-family: teko;
+  font-size: 42px;
+  color: coral;
+}
+
+.main-wrapper {
+  padding: 36px 24px;
+  max-width: 1080px;
+  margin: auto;
+}
+
+@media (min-width: 510px) {
+  .pokemon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .hero-content {
+    padding: 40px;
+  }
+
+  .pokedex-card {
+    flex-basis: calc(50% - 8px);
+  }
+}
+
+@media (min-width: 810px) {
+  .pokedex-card {
+    flex-basis: calc(33.333333% - 12px);
+  }
+
+  .hero-content {
+    padding: 60px;
+  }
+
+  .pokemon-name {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pokedex-card {
+    flex-basis: calc(25% - 12px);
+  }
+
+  .hero-content {
+    padding: 60px;
+  }
+
+  .pokemon-name {
+    font-size: 32px;
+  }
+}
+
+.pokemon-type-wrapper {
+  margin: 3px;
+  padding-top: 4px;
+  gap: 4px;
+  display: flex;
+}
+
+.pokemon-type {
+  background-color: grey;
+  border-radius: 3px;
+  width: fit-content;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: rgb(65, 65, 65);
+  font-size: 14px;
+}
+
+.pokemon-type--grass {
+  background-color: rgb(153, 255, 0);
+}
+
+.pokemon-type--poison {
+  background-color: rgb(224, 129, 255);
+}
+
+.pokemon-type--misc {
+  background-color: rgb(169, 47, 210);
+  color: white;
+}
+
+.pokemon-type--water {
+  background-color: rgb(153, 238, 241);
+}
+
+.pokemon-type--fire {
+  background-color: rgb(241, 112, 112);
+}
