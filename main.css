@@ -143,11 +143,10 @@ html {
 
 .hero-title {
   display: inline-block;
-  border: black solid 3px;
   margin: 10px;
-  padding: 30px;
+  padding: 0px;
   font-family: teko;
-  font-size: 30px;
+  font-size: 42px;
   font-weight: 800;
 }
 
@@ -173,7 +172,10 @@ html {
 }
 
 .pokedex-card {
-  margin: ;
+  padding: 30px;
+  border: solid rgb(189, 189, 189) 1px;
+  border-radius: 20px;
+  margin-bottom: 30px;
 }
 
 .pokemon-number {
@@ -197,6 +199,18 @@ html {
   padding: 36px 24px;
   max-width: 1080px;
   margin: auto;
+}
+
+@media (min-width: 0px) {
+  .pokemon-grid {
+    gap: 16px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .hero-content {
+    padding: 40px;
+  }
 }
 
 @media (min-width: 510px) {
